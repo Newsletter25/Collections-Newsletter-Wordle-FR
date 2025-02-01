@@ -4533,7 +4533,7 @@ function intialize() {
       let key = currRow[j];
       keyTile.innerText = key;
       if (key == "Entrée") {
-        keyTile.id = "Enter";
+        keyTile.id = "enter";
       } else if (key == "⌫") {
         keyTile.id = "Backspace";
       } else if ("A" <= key && key <= "Z") {
