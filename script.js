@@ -4532,7 +4532,7 @@ function intialize() {
 
       let key = currRow[j];
       keyTile.innerText = key;
-      if (key == "Enter") {
+      if (key == "Entrée") {
         keyTile.id = "Enter";
       } else if (key == "⌫") {
         keyTile.id = "Backspace";
@@ -4542,7 +4542,7 @@ function intialize() {
 
       keyTile.addEventListener("click", processKey);
 
-      if (key == "Enter") {
+      if (key == "Entrée") {
         keyTile.classList.add("enter-key-tile");
       } else {
         keyTile.classList.add("key-tile");
@@ -4585,7 +4585,7 @@ function processInput(e) {
       row.toString() + "-" + col.toString()
     );
     currTile.innerText = "";
-  } else if (e.code == "Enter") {
+  } else if (e.code == "Entrée") {
     update();
   }
 
