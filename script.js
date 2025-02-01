@@ -4519,7 +4519,7 @@ function intialize() {
   let keyboard = [
     ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],
     ["A", "S", "D", "F", "G", "H", "J", "K", "L", " "],
-    ["Enter", "Z", "X", "C", "V", "B", "N", "M", "⌫"],
+    ["Entrée", "Z", "X", "C", "V", "B", "N", "M", "⌫"],
   ];
 
   for (let i = 0; i < keyboard.length; i++) {
@@ -4532,8 +4532,8 @@ function intialize() {
 
       let key = currRow[j];
       keyTile.innerText = key;
-      if (key == "Enter") {
-        keyTile.id = "Enter";
+      if (key == "Entrée") {
+        keyTile.id = "Entrée";
       } else if (key == "⌫") {
         keyTile.id = "Backspace";
       } else if ("A" <= key && key <= "Z") {
@@ -4542,7 +4542,7 @@ function intialize() {
 
       keyTile.addEventListener("click", processKey);
 
-      if (key == "Enter") {
+      if (key == "Entrée") {
         keyTile.classList.add("enter-key-tile");
       } else {
         keyTile.classList.add("key-tile");
@@ -4585,7 +4585,7 @@ function processInput(e) {
       row.toString() + "-" + col.toString()
     );
     currTile.innerText = "";
-  } else if (e.code == "Enter") {
+  } else if (e.code == "Entrée") {
     update();
   }
 
