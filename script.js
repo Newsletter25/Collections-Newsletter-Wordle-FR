@@ -4585,7 +4585,7 @@ function processInput(e) {
       row.toString() + "-" + col.toString()
     );
     currTile.innerText = "";
-  } else if (e.code == "Entr\u00e9e") {
+  } else if (e.code == "enter") {
     update();
   }
 
