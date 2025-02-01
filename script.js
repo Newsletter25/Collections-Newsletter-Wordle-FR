@@ -4533,7 +4533,7 @@ function intialize() {
       let key = currRow[j];
       keyTile.innerText = key;
       if (key == "Entree") {
-        keyTile.id = "enter";
+        keyTile.id = "entree";
       } else if (key == "⌫") {
         keyTile.id = "Backspace";
       } else if ("A" <= key && key <= "Z") {
@@ -4543,7 +4543,7 @@ function intialize() {
       keyTile.addEventListener("click", processKey);
 
       if (key == "Entree") {
-        keyTile.classList.add("enter-key-tile");
+        keyTile.classList.add("entree-key-tile");
       } else {
         keyTile.classList.add("key-tile");
       }
