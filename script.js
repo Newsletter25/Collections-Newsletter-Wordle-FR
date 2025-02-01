@@ -4610,7 +4610,7 @@ function update() {
   console.log(guess);
 
   if (!guessList.includes(guess)) {
-    document.getElementById("answer").innerText = "PAST DANS LA LISTE DE MOTS!";
+    document.getElementById("answer").innerText = "PAS DANS LA LISTE DE MOTS!";
     return;
   }
 
