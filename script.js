@@ -4495,7 +4495,7 @@ var guessList = [
 
 guessList = guessList.concat(wordList);
 
-var word = "trace".toUpperCase();
+var word = "dette".toUpperCase();
 console.log(word);
 
 window.onload = function () {
